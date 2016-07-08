@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <title></title><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script type="text/javascript" charset="utf-8" src="jquery-3.0.0.min.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+	//verify that jquery is loaded
+	$(document).ready(function(){
+		alert('jquery is ready');
+	});
+  // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+//when device is ready
+function onDeviceReady(){
+	alert ('device is ready');
+	localStorage.setItem('key','value')
+;
+
+        localStorage.setItem('listx','fulllist');		
+        
+      var i = localStorage.getItem('listx');
+        var e = localStorage.getItem('key');
+        $('p').html(i+e);
+          </script>
+		</head>
+		<body>
+			<p></p>
+			
+			</body>
+			</html>
